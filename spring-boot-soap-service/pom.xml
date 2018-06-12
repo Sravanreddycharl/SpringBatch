@@ -6,11 +6,11 @@
 	<groupId>com.example.howtodoinjava</groupId>
 	<artifactId>spring-boot-soap-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	
+
 	<packaging>war</packaging>
 
-	<configuration>
-    <mainClass>com.example.howtodoinjava.springbootsoapservice.SpringBootSoapServiceApplication</mainClass>
-		</configuration>
+	
 	<name>spring-boot-soap-service</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -60,47 +60,22 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-
-			<!-- <plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>jaxb2-maven-plugin</artifactId>
-				<version>1.6</version>
-				<executions>
-					<execution>
-						<id>xjc</id>
-						<goals>
-							<goal>xjc</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<schemaDirectory>${project.basedir}/src/main/resources/</schemaDirectory>
-					<outputDirectory>${project.basedir}/src/main/java</outputDirectory>
-					<clearOutputDir>false</clearOutputDir>
-				</configuration>
-			</plugin> -->
-
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>jaxb2-maven-plugin</artifactId>
-				<version>1.6</version>
-				<executions>
-					<execution>
-						<id>xjc</id>
-						<goals>
-							<goal>xjc</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<schemaDirectory>${project.basedir}/src/main/resources/</schemaDirectory>
-					<outputDirectory>${project.basedir}/src/main/java</outputDirectory>
-					<clearOutputDir>false</clearOutputDir>
-				</configuration>
-			</plugin>
->>>>>>> branch 'master' of https://github.com/Sravanreddycharl/SpringBatch.git
-		</plugins>
+			
+			<configuration>
+     <mainClass>com.example.howtodoinjava.springbootsoapservice.SpringBootSoapServiceApplication</mainClass>
+	<additionalClasspathElements>
+                <additionalClasspathElement>${basedir}/target/classes</additionalClasspathElement>
+            </additionalClasspathElements>
+</configuration>
+<executions>
+<execution>
+    <goals>
+        <goal>repackage</goal>
+    </goals>
+</execution>
+</executions></plugin>
+	</plugins>
+	
 	</build>
 
 	<repositories>
@@ -140,6 +115,6 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
-
-
+	
+	
 </project>

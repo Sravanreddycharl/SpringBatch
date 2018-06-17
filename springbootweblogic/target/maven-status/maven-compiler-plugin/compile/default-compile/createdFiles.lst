@@ -1,0 +1,9 @@
+com\test\xml\school\package-info.class
+com\test\xml\school\StudentDetailsResponse.class
+com\test\springbootweblogic\StudentEndpoint.class
+com\test\springbootweblogic\StudentRepository.class
+com\test\xml\school\Student.class
+com\test\xml\school\StudentDetailsRequest.class
+com\test\xml\school\ObjectFactory.class
+com\test\springbootweblogic\Config.class
+com\test\springbootweblogic\SpringbootweblogicApplication.class

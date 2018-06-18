@@ -1,0 +1,13 @@
+== Spring Boot - Sample - Web Services - Oracle Weblogic Server 12.2.1.2
+
+in the Spring Web Services reference guide.
+
+The sample uses Maven. It can be built and run from the command line:
+
+----
+$ mvn spring-boot:run
+----
+
+http://localhost:8080/service/studentDetailsWsdl.wsdl will now display the generated WSDL.
+
+http://localhost:7001/springbootweblogic/service/studentDetailsWsdl.wsdl

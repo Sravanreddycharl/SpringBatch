@@ -63,9 +63,6 @@
 
 				<configuration>
 					<mainClass>com.example.howtodoinjava.springbootsoapservice.SpringBootSoapServiceApplication</mainClass>
-					<additionalClasspathElements>
-						<additionalClasspathElement>${basedir}/target/classes</additionalClasspathElement>
-					</additionalClasspathElements>
 				</configuration>
 				<executions>
 					<execution>
